@@ -25,6 +25,6 @@ int main(int argc, char *argv[]) {
   printf("Dato 1: \n");
   printf("\tEdad: %d\n\tPeso: %.2f\n\tNombre: %s\n", dato1.edad, dato1.peso, dato1.nombre);
   printf("Dato 2: \n");
-  printf("\tEdad: %d\n\tPeso: %.2f\n\tNombre: %s\n", dato2.edad, dato2.peso, dato2.nombre);
+  printf("\tEdad: \n\tPeso: %.2f\n\tNombre: %s\n", dato2.edad, dato2.peso, dato2.nombre);
   return 0;
 }
