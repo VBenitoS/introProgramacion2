@@ -11,7 +11,7 @@ typedef struct{
   int64 numeroHojas;
   int32 numeroRamas;
   int16 numeroDulces;
-  byte numeroArbol[10];
+  byte nombreArbol[10];
 }arbol_t;
 
 arbol_t crearArbol(arbol_t arbol);
@@ -33,7 +33,7 @@ arbol_t crearArbol(arbol_t arbol) {
   printf("\tNumero de dulces: ");
   scanf("%hd", &arbol.numeroDulces);
   printf("\tCodigo del arbol: ");
-  scanf("%s", &arbol.numeroArbol);
+  scanf("%s", arbol.nombreArbol);
   return arbol;
 }
 
@@ -42,5 +42,5 @@ void mostrarArbol(arbol_t arbol) {
   printf("\tHojas: %lld\n", arbol.numeroHojas);
   printf("\tRamas: %d\n", arbol.numeroRamas);
   printf("\tDulces: %hd\n", arbol.numeroDulces);
-  printf("\tCodigo: %s\n", arbol.numeroArbol);
+  printf("\tCodigo: %s\n", arbol.nombreArbol);
 }
