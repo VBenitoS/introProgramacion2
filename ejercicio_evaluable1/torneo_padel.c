@@ -10,8 +10,8 @@ typedef struct{
 }pareja_t;
 
 typedef struct{
-  pareja_t pareja1;
-  pareja_t pareja2;
+  pareja_t *pareja1;
+  pareja_t *pareja2;
   int sets_pareja1;
   int sets_pareja2;
 }partido_t;
