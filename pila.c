@@ -6,9 +6,24 @@ typedef struct {
   nodo_t *siguiente;
 } nodo_t;
 
+typedef enum {
+  SALIR,
+  NUEVO,
+  LISTAR,
+  SACAR,
+  CONTAR
+} menu_e;
+
+int menu();
+void listarNodo(nodo_t *pila);
 void nuevoNodo(nodo_t ** pila);
 
 int main(int argc, char *argv[]) {
+  nodo_t *pila = NULL;
+  int opcion = 0;
+  do {
+
+  }
   return 0;
 }
 
@@ -18,4 +33,8 @@ void nuevoNodo(nodo_t ** pila) { //es doble * porque como la pila ya es un punte
   nodo->numero = 3;
   nodo->siguiente = *pila;
   *pila = nodo;
+}
+
+void listarNodo(nodo_t *pila) {
+
 }
