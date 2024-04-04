@@ -103,7 +103,7 @@ char *leeCadenaDinamica()
   while ((aux = getchar()) != '\n')
   {
     ptr[tam_cadena++] = aux;
-    ptr = realloc(ptr, tam_cadena + 1);
+    ptr = realloc(ptr, (tam_cadena + 1)*sizeof(char));
 
   }
   ptr[tam_cadena] = '\0';
