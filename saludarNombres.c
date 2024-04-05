@@ -8,5 +8,6 @@ int main(int argc, char *argv[]) {
   for(int i=2; i< argc; i++) {
     fprintf(f,"ola %s\n", argv[i]);
   }
+  fclose(f);
   return 0;
 }
