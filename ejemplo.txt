@@ -1,4 +1,4 @@
-El abecedario: 
+El abecedariOO
 a	A
 b	B
 c	C
@@ -13,7 +13,7 @@ k	K
 l	L
 m	M
 n	N
-o	O
+OOO
 p	P
 q	Q
 r	R
@@ -22,8 +22,8 @@ t	T
 u	U
 v	V
 w	W
-x	X
+x	O
 y	Y
 z	Z
-Buenaaaaas lokete
-Hooola lokete
+Buenaaaaas lOOete
+HOOOOa lOOete
