@@ -1,0 +1,16 @@
+En el rincón más apartado del bosque,
+entre árboles milenarios y susurros de hojas,
+se esconde un secreto ancestral.
+Solo aquellos con el corazón puro y
+la mente abierta pueden descubrirlo.
+La luz del sol apenas se filtra entre las ramas,
+creando un halo mágico que envuelve todo a su paso.
+Allí, en ese santuario natural, los sueños se entrelazan con la realidad,
+y el tiempo se detiene para aquellos que se atreven a adentrarse en lo desconocido.
+
+leelineaDinamica(FILE *f) {
+  int i=0;
+  char *ptr = NULL;
+  char aux='\0';
+  char caracter;
+}
