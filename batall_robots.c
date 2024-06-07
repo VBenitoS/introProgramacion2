@@ -26,18 +26,23 @@ int main(int argc, char *argv[]){
   FILE *f1 = fopen("ano.txt", "r");
   FILE *f2 = fopen("robotsEND.txt", "w+");
   char *linea;
+  char *aux;
   int comp;
   robot_t robot;
   lista_robots_t lista;
   lista.robots = (robot_t*)malloc(sizeof(robot_t));
   lista.num = 0;
   while ((linea = leelineaDinamicaFichero(f1)) != NULL) {
-    robot.nombre = strtok(linea, ":");
+    aux = strtok(linea, ":");
+    robot.nombre = (char*)malloc(strlen(aux)+1);
+    strcpy(robot.nombre, aux);
     robot.nivel = atoi(strtok(NULL, ":"));
     robot.potencia = atoi(strtok(NULL, ":"));
     robot.velocidad = atoi(strtok(NULL, ":"));
     robot.resistencia = atoi(strtok(NULL, ":"));
-    robot.habilidad = strtok(NULL, ":");
+    aux = strtok(NULL, ":");
+    robot.habilidad = (char*)malloc(strlen(aux)+1);
+    strcpy(robot.habilidad, aux);
     fprintf(f2, "%s:%d:%d:%d:%d:%s\n", robot.nombre, robot.nivel, robot.potencia, robot.velocidad, robot.resistencia, robot.habilidad);
     lista.robots = (robot_t*)realloc(lista.robots, sizeof(robot_t) * (lista.num+1));
     lista.robots[lista.num] = robot;
@@ -68,7 +73,7 @@ char *leelineaDinamicaFichero(FILE *f) {
 
 void mostrar_robots(lista_robots_t lista) {
   for(int i=0; i< lista.num; i++) {
-    printf("%d - ", i);
+    printf("%d - ", i+1);
     printf("Nombre: %s |", lista.robots[i].nombre);
     printf("Nivel: %d |", lista.robots[i].nivel);
     printf("Potencia: %d |", lista.robots[i].potencia);
